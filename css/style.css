@@ -16,21 +16,28 @@ a {
    text-decoration: none;
    display: inline-block;
 }
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   line-height: 28px;
+}
 ul,
 li {
    margin: 0;
    padding: 0;
    list-style: none;
 }
+.header-top {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   z-index: 10;
+}
 .container {
    max-width: 1200px;
    padding: 0 15px;
    margin: 0 auto;
 }
-body {
-   background-color: grey;
-}
-
 .heade__inner {
    display: flex;
    justify-content: space-between;
@@ -67,4 +74,97 @@ body {
    color: #fff;
    background-color: #8b755a;
    padding: 18px 25px;
+}
+
+.top {
+   height: 100vh;
+}
+.top--inner {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   z-index: 10;
+   text-align: center;
+   transform: translate(-50%, -50%);
+   color: white;
+}
+.top--subtiitle {
+   font-size: 37px;
+   font-family: 'Italianno', cursive;
+   margin-bottom: 35px;
+}
+.top-title {
+   font-size: 95px;
+   font-family: 'Montserrat', sans-serif;
+   line-height: 50px;
+   margin-bottom: 55px;
+}
+.top--link {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 12px;
+   letter-spacing: 1px;
+   font-weight: 700;
+   border: 2px solid #fff;
+   padding: 14px 20px;
+   color: white;
+}
+.top--item-1,
+.top--item-2,
+.top--item-3{
+   background-image: url(../img/top-item-1.jpg);
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+
+.top--item-fon {
+   background-color: rgba(0,0,0,.55);
+   height: 100vh;
+}
+.top-slider .slick-dots {
+   position: absolute;
+   top: 50%;
+   transform: translate(0, -50%);
+   left: 35px;
+}
+.top-slider .slick-dots li button {
+   height: 35px;
+   width: 0;
+   font-size: 0;
+   background-color: transparent;
+   border: none;
+   border-left: 1px solid transparent;
+   outline: none;
+   position: relative;
+   padding: 0 24px 0 0;
+   cursor: pointer;
+}
+.top-slider .slick-dots li.slick-active button {
+      border-left: 1px solid #fff;
+}
+.top-slider .slick-dots li button::before {
+   content: '\f105';
+   position: absolute;
+   right: 0;
+   top: 9px;
+   font-family: 'icomoon';
+   font-size: 15px;
+   color: rgba(255, 255, 255, .5);
+}
+.top-slider .slick-dots li.slick-active button::before {
+   color: #fff;
+}
+.top--to-go {
+   position: absolute;
+   bottom: 40px;
+   left: 0;
+   right: 0;
+   width: 100%;
+   z-index: 11;
+   text-align: center;
+}
+.top--to-go a {
+   font-size: 34px;
+   color: white;
 }
