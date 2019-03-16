@@ -108,10 +108,21 @@ li {
    padding: 14px 20px;
    color: white;
 }
-.top--item-1,
-.top--item-2,
+.top--item-1{
+      background-image: url(../img/top-item-1.jpg);
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+.top--item-2{   background-image: url(../img/top-item-2.jpg);
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
 .top--item-3{
-   background-image: url(../img/top-item-1.jpg);
+   background-image: url(../img/top-item-3.jpg);
    background-position: top center;
    background-repeat: no-repeat;
    background-size: cover;
