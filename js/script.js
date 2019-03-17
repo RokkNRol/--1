@@ -6,4 +6,21 @@ $(function() {
       autoplaySpeed: 3000,
       fade: true
    });
+   	$(".top__to-go").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 900);
+	});
+$('.menu--btn').click(function() {
+   $('.header--menu-list').slideToggle();
 });
+});
+
