@@ -8,8 +8,8 @@
    }
 
    .footer--instagram img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
    }
 
    .footer--instagram-images {
@@ -79,11 +79,13 @@
       text-align: center;
       margin-top: 20px;
    }
+
    .menu-block-info {
       padding: 30px 20px 50px 20px;
    }
 
 }
+
 @media (max-width: 414px) {
    .top-title {
       font-size: 70px;
